@@ -1,21 +1,51 @@
 What happens when you initialize a repository? Why do you need to do it?
 
 	- It initialise that directory as a git repository. 
-	- This will help keep the  version and chnages information for all the files managed under that repository.
+	- This will help keep the  version and chnages information for all 
+	the files managed under that repository.
 
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
 
+	- Staging area is an intermediatory place to collect commit, 
+	- This helps you to combine multiple changes in diffrent file since they are 
+	logicaly single opration.
+
 How can you use the staging area to make sure you have one commit per logical
 change?
+
+	- We can change the files one by one and keep on adding then in the stagin 
+	area to track the changes incrementaly and view diff without adding to 
+	repository, once the logical change is complete, you can comit all changes 
+	in multiple files as a single commit.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+	- I can use it for creating customized versions of games I am developing 
+	based on my customers demand. some feature request y customers are unique 
+	and not sutable to otheres hence it is better to keep it in a separate 
+	branch.
+
 How do the diagrams help you visualize the branch structure?
+
+	- IT helps in tracing back how the branchase are formed who are the parents
+	and how to take it forward. It also helps plan the release structure better.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+	- Mearging two files incorporated all changes done on alternate branch as 
+	well as retaining the changes happend in master branch by referencing it 
+	with the master. It helped understand the logic which will be appied while
+	mearging the changes.
+
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+	- GIT automatic merge helps avoid lot of manual work of looking for the
+	changes camparing them with master or other branch and accepting the one
+	based on some predefined understanding.
+	Cons, are that the changes are evaluated line-by-line hence there might be 
+	some impact when line for a perticular section deleted but that is still 
+	being used by some newly writened fucntion.
